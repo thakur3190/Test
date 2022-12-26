@@ -1,0 +1,37 @@
+
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    
+<title><b>Track Orders using tracking number</b></title>
+</head>
+<body>
+
+ <div class="tracking-page">
+        <h1 class="tracking-heading">Track the status of your Parcel</h1>
+        <p class="tracking-subtitle">
+            Enter the tracking number of your parcel to track the status of your parcel.
+        </p>
+        <form action="/" method="POST">
+            <input type="text" name="tracking" id="trackingId" class="tracking-input"
+                placeholder="Enter Your tracking number">
+            <input type="submit" onclick="track(event)" value="Track" class="tracking-button">
+        </form>
+    </div>
+    <div class="container detail hidden">
+        <h3>Your Product Details</h3>
+        <hr>
+        <div class="product-detail">
+            <p>Product ID: <span id="productId"></span></p>
+            <p>Product is: <span id="productName"></span></p>
+            <p>Status: <span id="productStatus"></span></p>
+            <p>Thank You</p>
+        </div>
+        <button class="btn" type="button" onclick="trackAnother(event)">Back</button>
+    </div>
+    
+</body>
+</html>
